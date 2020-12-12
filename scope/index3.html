@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Java script scope</title>
+    </head>
+
+    <body>
+
+        <h1>JavaScript</h1>
+
+        <script>
+            function one() {
+                var a = "1";
+                console.log("function one a: " + a);
+
+                function two() {
+                    var a = "2";
+                    console.log("function two a: " + a);
+                    
+                    function three() {
+                        var a = "3";
+                        console.log("function three a: " + a);
+                    }
+                    three();
+                }
+                two();
+            }
+            one();
+        </script>
+    </body>
+</html>

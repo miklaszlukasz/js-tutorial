@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Java script scope</title>
+    </head>
+
+    <body>
+
+        <h1>JavaScript</h1>
+
+        <script>
+            var someVariable = "global variable";
+
+            function someFunction() {
+                var someVariable = "local varable";
+                console.log(someVariable);
+            }
+
+            someFunction();
+
+            console.log(someVariable);
+        </script>
+    </body>
+</html>
