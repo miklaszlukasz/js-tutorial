@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Java script scope of variables</title>
+    </head>
+
+    <body>
+
+        <h1>JavaScript</h1>
+
+        <script>
+
+            function varTest() {
+                var varVariable = "var variable - 123";
+                if(true) {
+                    var varVariable = "var variable - 321";
+                    console.log(varVariable);
+                }
+                console.log(varVariable);
+            }
+
+            
+            function letTest() {
+                let letVariable = "let variable - 123";
+                if(true) {
+                    let letVariable = "let variable - 321";
+                    console.log(letVariable);
+                }
+                console.log(letVariable);
+            }
+
+            function constTest() {
+                const constVariable = "const variable - 123";
+                if(true) {
+                    const constVariable = "const variable - 321";
+                    console.log(constVariable);
+                }
+                console.log(constVariable);
+            }
+
+            varTest();
+            console.log("==================");
+            letTest();
+            console.log("==================");
+            constTest();
+        </script>
+    </body>
+</html>

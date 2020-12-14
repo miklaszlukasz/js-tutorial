@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Java script scope of variables</title>
+    </head>
+
+    <body>
+
+        <h1>JavaScript</h1>
+
+        <script>
+            var varVariable = "global scope - var";
+            let letVariable = "global scope - let";
+            const constVariable = "global scope - const";
+
+            {
+                var varVariable = "local scope - var";
+                let letVariable = "local scope - let";
+                const constVariable = "local scope - const";
+                console.log(varVariable);
+                console.log(letVariable);
+                console.log(constVariable);
+            }
+
+            console.log(varVariable);
+            console.log(letVariable);
+            console.log(constVariable);
+        </script>
+    </body>
+</html>
