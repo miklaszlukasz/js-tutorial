@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Java script functions</title>
+    </head>
+
+    <body>
+
+        <h1>JavaScript</h1>
+
+        <script>
+            function addFive(number) {
+                number += 5;
+                console.log(number);
+                return number;
+            }
+
+            const userName = function(firstName, secondName) {
+                return 'first name : ${firstName}\nsecondName: %{secondName}';
+            }
+
+            const logInConsole = new Function('value', 'console.log(value)');
+
+            const add = (a, b, c) => {
+                return a+b+c;
+            }
+
+            const squere = a => a*a; 
+
+
+            let a = addFive(10);
+            console.log(a);
+            console.log(userName("name", "surname"));
+            logInConsole("test");
+            console.log(add(3, 3, 3));
+            console.log(squere(2));
+        </script>
+    </body>
+</html>
