@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Java script callback</title>
+    </head>
+
+    <body>
+
+        <h1>JavaScript</h1>
+
+        <script>
+            function showInConsole(x) {
+                console.log(x);
+            }
+
+            function showInAlert(x) {
+                alert(x);
+            }
+
+           function someFunction(x, callback) {
+               callback(x);
+           }
+
+           someFunction("show alert", showInAlert);
+           someFunction("show in console", showInConsole);
+        </script>
+    </body>
+</html>
