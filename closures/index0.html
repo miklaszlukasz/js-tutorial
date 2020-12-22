@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Java script closures</title>
+    </head>
+
+    <body>
+
+        <h1>JavaScript</h1>
+
+        <script>
+            function hello(name) {
+                return function(day) {
+                    console.log(`Hello ${name}, today is ${day}`);
+                }
+            }
+
+            const user = hello("Lukasz");
+            console.log(user);
+            console.log(user("monday"));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Java script closures</title>
+    </head>
+
+    <body>
+
+        <h1>JavaScript</h1>
+
+        <script>
+
+            function counter(a) {
+                let iterator = a;
+                return function() {
+                    return ++iterator;
+                }
+            }
+
+            const count = counter(0);
+            console.log(count)
+            console.log(count)
+            console.log(count)
+            console.log(count)
+            console.log(count)
+            console.log(count)
+
+        </script>
+    </body>
+</html>

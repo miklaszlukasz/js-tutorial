@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Java script closures</title>
+    </head>
+
+    <body>
+
+        <h1>JavaScript</h1>
+
+        <script>
+            const add = function(a) {
+                let b = 10;
+                return function(c) {
+                    return a + b + c;
+                }
+            }
+
+            const add1 = add(20);
+            console.log(add1);
+            console.log(add1(3));
+        </script>
+    </body>
+</html>
